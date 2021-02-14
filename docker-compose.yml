@@ -1,0 +1,11 @@
+version: '3.4'
+
+services: 
+  go-rest-api:
+    image: go-rest-docker
+    container_name: go-rest-docker
+    ports: 
+      - '10000:10000/tcp'
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
